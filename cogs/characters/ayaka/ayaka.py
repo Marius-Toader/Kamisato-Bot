@@ -15,7 +15,7 @@ class Ayaka(commands.Cog):
         JSONData = json.loads(data)
         
         embed = discord.Embed(title=JSONData["name"])
-        embed.set_thumbnail(url="https://github.com/Marius-Toader/Kamisato-Bot/tree/dev/assets/ayaka.jpg")
+        embed.set_thumbnail(url="https://raw.githubusercontent.com/Marius-Toader/Kamisato-Bot/dev/assets/ayaka.jpg")
         embed.add_field(name="Description", value=JSONData["description"], inline=False)
         embed.add_field(name="Nation", value=JSONData["nation"], inline=True)
         embed.add_field(name="Vision", value=JSONData["vision"], inline=True)
