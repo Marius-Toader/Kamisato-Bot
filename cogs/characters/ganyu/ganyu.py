@@ -42,7 +42,7 @@ async def ganyu_team(ctx):
                     '__Bennett__\n' +
                     '__Jean__', inline=True)
     embed.add_field(name='\u200b', value='\u200b', inline=False)
-    embed.add_field(name='Melt Team', value='Team composition:\n' +
+    embed.add_field(name='Freeze Team', value='Team composition:\n' +
                     '1. Ganyu\n' +
                     '2. Hydro character\n' +
                     '3. Cryo character\n' +

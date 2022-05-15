@@ -27,7 +27,7 @@ class Characters(commands.Cog):
         self.bot = bot
     
     @commands.command(name="character")
-    async def character(self, ctx: commands.Context, arg, arg2):
+    async def character(self, ctx: commands.Context, arg, arg2=None):
         if arg2 is None:    
             response = requests.get('https://api.genshin.dev/characters/' + arg)
             data = response.text
