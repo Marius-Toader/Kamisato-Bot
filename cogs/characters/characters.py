@@ -126,7 +126,7 @@ class Characters(commands.Cog):
             else:
                 await ctx.send('The only 2 parameters allowed in the 2nd slot are `build` and `team`.')
     
-    """@character.error
+    @character.error
     async def character_handler(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument) or isinstance(error, commands.CommandInvokeError):
             await ctx.send("The `%character` command needs a certain character name to function properly (example: `%character albedo`). \n" +
@@ -140,7 +140,7 @@ class Characters(commands.Cog):
                         "- For Raiden Shogun: `raiden`\n" +
                         "- For Kujou Sara: `sara`\n" +
                         "- For Traveler: `traveler-`[`anemo`/`electro`/`geo`]\n" +
-                        "- For Yun Jin: `yun-jin`")"""
+                        "- For Yun Jin: `yun-jin`")
             
 def setup(bot: commands.Bot):
     bot.add_cog(Characters(bot))

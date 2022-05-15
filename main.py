@@ -8,5 +8,6 @@ bot = commands.Bot(command_prefix = "%", intents=intents)
 bot.load_extension("hello")
 bot.load_extension("cogs.music.music")
 bot.load_extension("cogs.characters.characters")
+bot.load_extension("cogs.weapons.weapons")
 
 bot.run(token)
