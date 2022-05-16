@@ -37,6 +37,8 @@ class Weapons(commands.Cog):
             embed = discord.Embed(title='Prototype Amber')
         if arg == 'prototype-starglitter':
             embed = discord.Embed(title='Prototype Starglitter')
+        else:
+            embed = discord.Embed(title=JSONData['name'])
         embed.set_thumbnail(url="https://raw.githubusercontent.com/Marius-Toader/Kamisato-Bot/dev/assets/" + arg + ".png")
         embed.add_field(name="Passive name: " + JSONData['passiveName'], value=JSONData['passiveDesc'], inline=False)
         embed.add_field(name="Type", value=JSONData['type'], inline=True)
@@ -48,7 +50,9 @@ class Weapons(commands.Cog):
     @weapon.error
     async def weapon_handler(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument) or isinstance(error, commands.CommandInvokeError):
-            await ctx.send("The `%weapon` command needs a certain weapon name to function properly (example: `%weapon rust`).\n")
+            await ctx.send("The `%weapon` command needs a certain weapon name to function properly (example: `%weapon rust`). " +
+                           "Please check the weapon specified (especially if it has quotation marks).\n" +
+                           "Some of the newer weapons are still unavailable. Sorry for the inconvenience.")
 
 def setup(bot):
     bot.add_cog(Weapons(bot))
