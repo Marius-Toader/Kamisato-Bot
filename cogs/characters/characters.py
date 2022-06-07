@@ -1,5 +1,6 @@
 from .albedo.albedo import *
 from .aloy.aloy import *
+from .aratakiitto.aratakiitto import *
 from .ayaka.ayaka import *
 from .diluc.diluc import *
 from .eula.eula import *
@@ -14,6 +15,7 @@ from .raiden.raiden import *
 from .tartaglia.tartaglia import *
 from .venti.venti import *
 from .xiao.xiao import *
+from .yaemiko.yaemiko import *
 from .yoimiya.yoimiya import *
 from .zhongli.zhongli import *
 from discord.ext import commands
@@ -85,6 +87,10 @@ class Characters(commands.Cog):
                     await klee_build(ctx)
                 elif arg == 'mona':
                     await mona_build(ctx)
+                elif arg == 'arataki-itto':
+                    await arataki_itto_build(ctx)
+                elif arg == 'yae-miko':
+                    await yae_miko_build(ctx)
                 
             elif arg2 == 'team':
                 if arg == 'ayaka':
@@ -123,6 +129,10 @@ class Characters(commands.Cog):
                     await klee_team(ctx)
                 elif arg == 'mona':
                     await mona_team(ctx)
+                elif arg == 'arataki-itto':
+                    await arataki_itto_team(ctx)
+                elif arg == 'yae-miko':
+                    await yae_miko_team(ctx)
             else:
                 await ctx.send('The only 2 parameters allowed in the 2nd slot are `build` and `team`.')
     

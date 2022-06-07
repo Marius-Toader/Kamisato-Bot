@@ -9,5 +9,6 @@ bot.load_extension("hello")
 bot.load_extension("cogs.music.music")
 bot.load_extension("cogs.characters.characters")
 bot.load_extension("cogs.weapons.weapons")
+bot.load_extension("cogs.search.search")
 
 bot.run(token)

@@ -39,7 +39,7 @@ async def raiden_team(ctx):
                     '__Xiangling__\n' +
                     '__Kujou Sara__\n' +
                     '__Fischl__\n' +
-                    'Yae Miko\n' +
+                    '__Yae Miko__\n' +
                     '__Kokomi__', inline=True)
     embed.add_field(name='\u200b', value='\u200b', inline=False)
     embed.add_field(name='Triple Electro Team', value='Team composition:\n' +
